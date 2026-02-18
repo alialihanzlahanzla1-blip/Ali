@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - My Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+    section { padding: 80px 0; }
+    .hover-img-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hover-img-wrapper .main-img {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.hover-img-wrapper .hover-img {
+  opacity: 0;
+  z-index: 2;
+}
+
+.hover-img-wrapper:hover .main-img {
+  opacity: 0;
+}
+
+.hover-img-wrapper:hover .hover-img {
+  opacity: 1;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MyPortfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+ <!-- About Section -->
+<section class="bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        
+        <div class=" w-75">
+          <img src="about images/WhatsApp Image 2026-02-18 at 12.04.53 PM.jpeg" 
+               class="img-fluid rounded-5 shadow main-img">
+        
+        </div>
+
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+  <h2>About Me</h2>
+  <p>Hello! I am a passionate <b>Full Stack Web Developer</b> with expertise in both frontend and backend development. 
+  I specialize in creating modern, responsive, and high-performance websites that deliver real results.</p>
+
+  <p>I have strong experience working with <b>PHP</b> as a backend language, and frameworks like <b>Bootstrap</b> and <b>Tailwind CSS</b> for building beautiful and responsive UIs. 
+  Along with web development, I am also a <b>Shopify Expert</b>, <b>WordPress Developer</b>, and skilled <b>Graphic Designer</b>, helping brands create unique digital identities.</p>
+
+  <p>Additionally, I have a solid background in <b>Digital Marketing</b>, ensuring that the websites and online stores I build are not only functional but also reach the right audience with maximum impact.</p>
+
+  <a href="services.html" class="btn btn-dark mt-3">View My Services</a>
+</div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
